@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+const listOfBooks = [
+{   title: 'In The Night Garden',    author: 'Mr Tom', read: true, },
+{   title: 'A Night with Fireman Sam', author: 'Mr Sam', read: false, },
+{   title: 'The Chronicle of Seuss', author: 'Dr Seuss', read: true, },
+{   title: 'The Human Body', author: 'Prof James', read: true, },
+];
+
+
+for (let index = 0; index < listOfBooks.length; index++) {
+    console.log (listOfBooks[index].title + " by " + (listOfBooks[index].author));
+
+    if (listOfBooks[index].read){
+        console.log('You have read ' + listOfBooks[index].title + ' by ' + listOfBooks[index].author)
+    } else {
+        console.log('You not have read ' + listOfBooks[index].title + ' by ' + listOfBooks[index].author)
+    }
+
+
+}
+
+
+
+
+
+
+// list to include title (string), author (string)
+// list whether currently read (true/false 'boolean')
+// create a log of all books with tilte and author
+// list IF book read, 'You already read' "book title" 'by' "book author"
+// list IF book not read, 'You still need to read' "book title" 'by' "book author".
+// 1. Creater list of books ARRAY of OBJECTS
+// 2. Cycle through list of books FOR LOOP 
+// 3. Show whether or not i have read the book
+
+</script>
+    
+
+
+</body>
+</html>
